@@ -113,10 +113,10 @@
 			isa = PBXGroup;
 			children = (
 				BFB453D329E677E1009F8C1A /* Application */,
-				BFB453D829E677F0009F8C1A /* Misc */,
-				BFB4540229E67828009F8C1A /* Models */,
 				BFB453E329E6780A009F8C1A /* Controller */,
+				BFB4540229E67828009F8C1A /* Models */,
 				BFB4541229E67843009F8C1A /* Storyboard */,
+				BFB453D829E677F0009F8C1A /* Misc */,
 				BFB4541929E67883009F8C1A /* Resources */,
 				BFB4541E29E6788F009F8C1A /* Assets.xcassets */,
 				95F32B8829E5A6E100E20561 /* Info.plist */,
@@ -586,7 +586,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hexalitics.mapkitnavigation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexalitics.applemapssample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = map_navigation_devlopment;
@@ -622,7 +622,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hexalitics.mapkitnavigation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexalitics.applemapssample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = map_navigation_devlopment;
