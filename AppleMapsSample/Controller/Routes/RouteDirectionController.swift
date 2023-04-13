@@ -222,13 +222,14 @@ extension RouteDirectionController {
       }
     } else {
       if let route = route {
-        self.mapView.setVisibleMapRect(route.polyline.boundingMapRect,
-                                       edgePadding: UIEdgeInsets(top: 16,
-                                                                 left: 16,
-                                                                 bottom: 16,
-                                                                 right: 16
-                                                                ),
-                                       animated: true)
+        self.mapView.setVisibleMapRect(
+          route.polyline.boundingMapRect,
+          edgePadding: UIEdgeInsets(top: 16,
+                                    left: 16,
+                                    bottom: 16,
+                                    right: 16
+                                   ),
+          animated: true)
         //        self.steps.removeAll()
         self.stepCounter = 0
       }
@@ -250,8 +251,9 @@ extension RouteDirectionController {
 
 extension RouteDirectionController {
   
-  private func showRouteOnMap(pickupCoordinate: CLLocationCoordinate2D,
-                              destinationCoordinate: CLLocationCoordinate2D
+  private func showRouteOnMap(
+    pickupCoordinate: CLLocationCoordinate2D,
+    destinationCoordinate: CLLocationCoordinate2D
   ) {
     let request = MKDirections.Request()
     request.source = MKMapItem(

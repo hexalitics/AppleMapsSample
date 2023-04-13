@@ -12,8 +12,9 @@ import UIKit
 
 class MapSubView {
   
-  static func configureUserButton(mapView: MKMapView,
-                                  mapTypeButton: UIButton)
+  static func configureUserButton(
+    mapView: MKMapView,
+    mapTypeButton: UIButton)
   {
     let userButton = MKUserTrackingButton(mapView: mapView)
     mapView.addSubview(userButton)

@@ -23,8 +23,10 @@ struct LocationScreen: View {
           self.lookAroundViewLocation = .init(x: 150, y: geo.size.height - 100)
         }
         MapView(tappedLocation: $tappedLocation)
-        LookAroundView(tappedLocation: $tappedLocation,
-                       showLookAroundView: $showLookAroundView)
+        LookAroundView(
+          tappedLocation: $tappedLocation,
+          showLookAroundView: $showLookAroundView
+        )
         .frame(width: 250, height: 150)
         .cornerRadius(10)
         .position(lookAroundViewLocation)

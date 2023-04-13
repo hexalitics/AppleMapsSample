@@ -138,12 +138,14 @@ extension CustomAnnotationController {
   
   private func custom() {
     for coordinate in multiCoordinates {
-      let pin = CustomAnnotation(coor: coordinate.coordinate,
+      let pin = CustomAnnotation(
+        coor: coordinate.coordinate,
                                  categoryId: coordinate.category
       )
       self.mapView.addAnnotation(pin)
     }
-    zoomToLocation(location: CLLocationCoordinate2D(latitude: 40.69281311028885,
+    zoomToLocation(location: CLLocationCoordinate2D(
+      latitude: 40.69281311028885,
                                                     longitude: -74.01118939136498)
     )
   }
@@ -270,7 +272,8 @@ extension CustomAnnotationController: MKMapViewDelegate  {
     location : CLLocationCoordinate2D,
     latitudinalMeters:CLLocationDistance = 10000,
     longitudinalMeters:CLLocationDistance = 10000) {
-      let region = MKCoordinateRegion(center: location,
+      let region = MKCoordinateRegion(
+        center: location,
                                       latitudinalMeters: latitudinalMeters,
                                       longitudinalMeters: longitudinalMeters
       )

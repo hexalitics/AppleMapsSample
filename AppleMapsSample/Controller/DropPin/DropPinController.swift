@@ -243,8 +243,9 @@ extension DropPinController {
 extension DropPinController: UIGestureRecognizerDelegate {
   
   private func configureDropPinAndPolyline() {
-    let gestureRecognizer = UILongPressGestureRecognizer(target: self,
-                                                         action: #selector(handleTap)
+    let gestureRecognizer = UILongPressGestureRecognizer(
+      target: self,
+      action: #selector(handleTap)
     )
     gestureRecognizer.delegate = self
     mapView.addGestureRecognizer(gestureRecognizer)
