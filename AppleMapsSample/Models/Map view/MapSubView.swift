@@ -38,12 +38,13 @@ class MapSubView {
     mapTypeButton.layer.cornerRadius = 5
   }
   
-  static func configureMapTypeContainerView(typeContainerView: UIView,
-                                            mapView: MKMapView,
-                                            standardButton: UIButton,
-                                            satelliteButton: UIButton,
-                                            hybridButton: UIButton,
-                                            mapTypeButton: UIButton
+  static func configureMapTypeContainerView(
+    typeContainerView: UIView,
+    mapView: MKMapView,
+    standardButton: UIButton,
+    satelliteButton: UIButton,
+    hybridButton: UIButton,
+    mapTypeButton: UIButton
   ) {
     typeContainerView.clipsToBounds = true
     mapView.addSubview(typeContainerView)
@@ -77,8 +78,9 @@ class MapSubView {
     hybridButton.setBackgroundImage(UIImage(named: "ic_hybrid"), for: .normal)
   }
   
-  static func configureMapView(mapView: MKMapView,
-                               view: UIView
+  static func configureMapView(
+    mapView: MKMapView,
+    view: UIView
   ) {
     mapView.showsUserLocation = true
     view.addSubview(mapView)

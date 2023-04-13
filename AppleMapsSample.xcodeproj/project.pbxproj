@@ -17,9 +17,7 @@
 		BFB453E029E677F0009F8C1A /* UIviewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB453DB29E677F0009F8C1A /* UIviewController + Extension.swift */; };
 		BFB453E129E677F0009F8C1A /* Extension + UItextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB453DC29E677F0009F8C1A /* Extension + UItextfield.swift */; };
 		BFB453E229E677F0009F8C1A /* StoryboardScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB453DE29E677F0009F8C1A /* StoryboardScene.swift */; };
-		BFB453F729E6780A009F8C1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB453E429E6780A009F8C1A /* ViewController.swift */; };
 		BFB453F829E6780A009F8C1A /* FlyOverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB453E729E6780A009F8C1A /* FlyOverController.swift */; };
-		BFB453F929E6780A009F8C1A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB453E829E6780A009F8C1A /* MapViewController.swift */; };
 		BFB453FA29E6780A009F8C1A /* LookAroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB453EB29E6780A009F8C1A /* LookAroundView.swift */; };
 		BFB453FB29E6780A009F8C1A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB453EC29E6780A009F8C1A /* MapView.swift */; };
 		BFB453FC29E6780A009F8C1A /* MapViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB453EE29E6780A009F8C1A /* MapViewCoordinator.swift */; };
@@ -56,9 +54,7 @@
 		BFB453DB29E677F0009F8C1A /* UIviewController + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIviewController + Extension.swift"; sourceTree = "<group>"; };
 		BFB453DC29E677F0009F8C1A /* Extension + UItextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension + UItextfield.swift"; sourceTree = "<group>"; };
 		BFB453DE29E677F0009F8C1A /* StoryboardScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScene.swift; sourceTree = "<group>"; };
-		BFB453E429E6780A009F8C1A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFB453E729E6780A009F8C1A /* FlyOverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyOverController.swift; sourceTree = "<group>"; };
-		BFB453E829E6780A009F8C1A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		BFB453EB29E6780A009F8C1A /* LookAroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookAroundView.swift; sourceTree = "<group>"; };
 		BFB453EC29E6780A009F8C1A /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		BFB453EE29E6780A009F8C1A /* MapViewCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewCoordinator.swift; sourceTree = "<group>"; };
@@ -112,7 +108,8 @@
 		95F32B7929E5A6E000E20561 /* AppleMapsSample */ = {
 			isa = PBXGroup;
 			children = (
-				BFB453D329E677E1009F8C1A /* Application */,
+				BFB453D429E677E1009F8C1A /* AppDelegate.swift */,
+				BFB453D529E677E1009F8C1A /* SceneDelegate.swift */,
 				BFB453E329E6780A009F8C1A /* Controller */,
 				BFB4540229E67828009F8C1A /* Models */,
 				BFB4541229E67843009F8C1A /* Storyboard */,
@@ -122,15 +119,6 @@
 				95F32B8829E5A6E100E20561 /* Info.plist */,
 			);
 			path = AppleMapsSample;
-			sourceTree = "<group>";
-		};
-		BFB453D329E677E1009F8C1A /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				BFB453D429E677E1009F8C1A /* AppDelegate.swift */,
-				BFB453D529E677E1009F8C1A /* SceneDelegate.swift */,
-			);
-			path = Application;
 			sourceTree = "<group>";
 		};
 		BFB453D829E677F0009F8C1A /* Misc */ = {
@@ -163,17 +151,7 @@
 		BFB453E329E6780A009F8C1A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BFB453E429E6780A009F8C1A /* ViewController.swift */,
-				BFB453E529E6780A009F8C1A /* Features */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		BFB453E529E6780A009F8C1A /* Features */ = {
-			isa = PBXGroup;
-			children = (
 				BFB453F429E6780A009F8C1A /* MapFeaturesController.swift */,
-				BFB453E829E6780A009F8C1A /* MapViewController.swift */,
 				BFB453F329E6780A009F8C1A /* SearchController.swift */,
 				BFB4542029E68258009F8C1A /* Polygon */,
 				BFB4542129E68270009F8C1A /* DropPin */,
@@ -183,7 +161,7 @@
 				BFB453E629E6780A009F8C1A /* Fly Over */,
 				BFB453E929E6780A009F8C1A /* LookAround(SwiftUI) */,
 			);
-			path = Features;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		BFB453E629E6780A009F8C1A /* Fly Over */ = {
@@ -401,7 +379,6 @@
 				BFB453E029E677F0009F8C1A /* UIviewController + Extension.swift in Sources */,
 				BFB453FA29E6780A009F8C1A /* LookAroundView.swift in Sources */,
 				BFB4540029E6780A009F8C1A /* MapFeaturesController.swift in Sources */,
-				BFB453F929E6780A009F8C1A /* MapViewController.swift in Sources */,
 				BFB453FE29E6780A009F8C1A /* LocationScreen.swift in Sources */,
 				BFB453FC29E6780A009F8C1A /* MapViewCoordinator.swift in Sources */,
 				BFB453E229E677F0009F8C1A /* StoryboardScene.swift in Sources */,
@@ -415,7 +392,6 @@
 				BFB4540F29E67828009F8C1A /* CustomAnnotations.swift in Sources */,
 				BFB453D729E677E1009F8C1A /* SceneDelegate.swift in Sources */,
 				BFB4540B29E67828009F8C1A /* MapSubView.swift in Sources */,
-				BFB453F729E6780A009F8C1A /* ViewController.swift in Sources */,
 				BFB4541029E67828009F8C1A /* Features.swift in Sources */,
 				BFB4540D29E67828009F8C1A /* PolygonResponseData.swift in Sources */,
 				BFB453DF29E677F0009F8C1A /* Extension + Uicontroller.swift in Sources */,
