@@ -16,12 +16,10 @@ struct LookAroundView: UIViewControllerRepresentable {
   @Binding var tappedLocation: CLLocationCoordinate2D?
   @Binding var showLookAroundView: Bool
   
-  
   func makeUIViewController(context: Context) -> MKLookAroundViewController {
     return MKLookAroundViewController()
   }
   
-  @available(iOS 16.0, *)
   func updateUIViewController(_ uiViewController: MKLookAroundViewController, context: Context) {
     if let tappedLocation {
       Task {
@@ -43,7 +41,6 @@ struct LookAroundView: UIViewControllerRepresentable {
     }
   }
   
-  @available(iOS 16.0, *)
   func getScene(tappedLocation: CLLocationCoordinate2D?) async -> MKLookAroundScene? {
     if let latitude = tappedLocation?.latitude, let longitude = tappedLocation?.longitude {
       let sceneRequest = MKLookAroundSceneRequest(coordinate: .init(latitude: latitude, longitude: longitude))

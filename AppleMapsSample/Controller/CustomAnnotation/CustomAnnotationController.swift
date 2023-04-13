@@ -18,13 +18,13 @@ class CustomAnnotationController: UIViewController {
   // MARK: - Private Properties
   
   private var cancellable = Set<AnyCancellable>()
-  private var mapView: MKMapView = MKMapView()
-  private var mapTypeContainer: UIView = UIView()
-  private var typeContainerView: UIView = UIView()
-  private var mapTypeButton: UIButton = UIButton()
-  private var standardButton: UIButton = UIButton()
-  private var satelliteButton: UIButton = UIButton()
-  private var hybridButton: UIButton = UIButton()
+  private var mapView = MKMapView()
+  private var mapTypeContainer = UIView()
+  private var typeContainerView = UIView()
+  private var mapTypeButton = UIButton()
+  private var standardButton = UIButton()
+  private var satelliteButton = UIButton()
+  private var hybridButton = UIButton()
   private let locationManager = CLLocationManager()
   
   private var multiCoordinates = [
@@ -140,13 +140,13 @@ extension CustomAnnotationController {
     for coordinate in multiCoordinates {
       let pin = CustomAnnotation(
         coor: coordinate.coordinate,
-                                 categoryId: coordinate.category
+        categoryId: coordinate.category
       )
       self.mapView.addAnnotation(pin)
     }
     zoomToLocation(location: CLLocationCoordinate2D(
       latitude: 40.69281311028885,
-                                                    longitude: -74.01118939136498)
+      longitude: -74.01118939136498)
     )
   }
 }
@@ -274,8 +274,8 @@ extension CustomAnnotationController: MKMapViewDelegate  {
     longitudinalMeters:CLLocationDistance = 10000) {
       let region = MKCoordinateRegion(
         center: location,
-                                      latitudinalMeters: latitudinalMeters,
-                                      longitudinalMeters: longitudinalMeters
+        latitudinalMeters: latitudinalMeters,
+        longitudinalMeters: longitudinalMeters
       )
       mapView.setRegion(region, animated: true)
     }

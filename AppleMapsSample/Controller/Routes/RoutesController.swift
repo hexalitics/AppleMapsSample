@@ -12,7 +12,7 @@ class RoutesController: UIViewController {
   
   // MARK: - Private Properties
   
-  private var tableView: UITableView = UITableView()
+  private var tableView = UITableView()
   
   // MARK: - Public Properties
   

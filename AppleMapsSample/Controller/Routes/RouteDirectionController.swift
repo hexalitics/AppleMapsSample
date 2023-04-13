@@ -20,21 +20,21 @@ class RouteDirectionController: UIViewController {
   
   private var cancellable = Set<AnyCancellable>()
   
-  private var descriptionContainerView: UIView = UIView()
-  private var mapTypeContainer: UIView = UIView()
-  private var typeContainerView: UIView = UIView()
-  private let arrowImageView: UIImageView = UIImageView()
+  private var descriptionContainerView = UIView()
+  private var mapTypeContainer = UIView()
+  private var typeContainerView = UIView()
+  private let arrowImageView = UIImageView()
   
-  private let searchAddressButton: UIButton = UIButton()
-  private var showRouteButton: UIButton = UIButton()
-  private var mapTypeButton: UIButton = UIButton()
-  private var standardButton: UIButton = UIButton()
-  private var satelliteButton: UIButton = UIButton()
-  private var hybridButton: UIButton = UIButton()
-  private var startnavigateButton: UIButton = UIButton()
-  private let descriptionLabel: UILabel = UILabel()
+  private let searchAddressButton = UIButton()
+  private var showRouteButton = UIButton()
+  private var mapTypeButton = UIButton()
+  private var standardButton = UIButton()
+  private var satelliteButton = UIButton()
+  private var hybridButton = UIButton()
+  private var startnavigateButton = UIButton()
+  private let descriptionLabel = UILabel()
   
-  private var mapView: MKMapView = MKMapView()
+  private var mapView = MKMapView()
   private let locationManager = CLLocationManager()
   
   private var route: MKRoute?

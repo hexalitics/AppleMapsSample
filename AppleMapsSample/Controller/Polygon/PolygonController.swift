@@ -18,13 +18,13 @@ class PolygonController: UIViewController {
   // MARK: - Private Properties
   
   private var cancellable = Set<AnyCancellable>()
-  private var mapView: MKMapView = MKMapView()
-  private var mapTypeContainer: UIView = UIView()
-  private var typeContainerView: UIView = UIView()
-  private var mapTypeButton: UIButton = UIButton()
-  private var standardButton: UIButton = UIButton()
-  private var satelliteButton: UIButton = UIButton()
-  private var hybridButton: UIButton = UIButton()
+  private var mapView = MKMapView()
+  private var mapTypeContainer = UIView()
+  private var typeContainerView = UIView()
+  private var mapTypeButton = UIButton()
+  private var standardButton = UIButton()
+  private var satelliteButton = UIButton()
+  private var hybridButton = UIButton()
   private let locationManager = CLLocationManager()
   
   override func viewDidLoad() {

@@ -9,8 +9,8 @@ import SwiftUI
 import MapKit
 
 final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
-  private let locationManager = CLLocationManager()
   
+  private let locationManager = CLLocationManager()
   @Published var userLocation: CLLocationCoordinate2D?
   
   override init() {

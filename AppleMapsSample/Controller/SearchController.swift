@@ -18,12 +18,12 @@ class SearchController: UIViewController {
   // MARK: - Private Properties
   
   private var searchSource = CurrentValueSubject<[String], Never>([])
-  private var searchCompleter:MKLocalSearchCompleter = MKLocalSearchCompleter()
+  private var searchCompleter = MKLocalSearchCompleter()
   private var cancellable = Set<AnyCancellable>()
   
-  private var tableView: UITableView = UITableView()
-  private var containerView: UIView = UIView()
-  private var searchTextField: UITextField = UITextField()
+  private var tableView = UITableView()
+  private var containerView = UIView()
+  private var searchTextField = UITextField()
   
   // MARK: - LifeCycle Methods
   

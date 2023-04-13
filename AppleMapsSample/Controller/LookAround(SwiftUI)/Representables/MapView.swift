@@ -18,11 +18,11 @@ struct MapView: UIViewRepresentable {
   var cancellable = Set<AnyCancellable>()
   typealias UIViewType = MKMapView
   let mapView = MKMapView(frame: .zero)
-  let mapTypeButton: UIButton = UIButton()
-  var typeContainerView: UIView = UIView()
-  var standardButton: UIButton = UIButton()
-  var satelliteButton: UIButton = UIButton()
-  var hybridButton: UIButton = UIButton()
+  let mapTypeButton = UIButton()
+  var typeContainerView = UIView()
+  var standardButton = UIButton()
+  var satelliteButton = UIButton()
+  var hybridButton = UIButton()
   
   @Binding var tappedLocation: CLLocationCoordinate2D? // we should bind the user tapped location coordinate object for sending the lookaroundview represen
   

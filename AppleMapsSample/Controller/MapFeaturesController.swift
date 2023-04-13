@@ -12,7 +12,7 @@ class MapFeaturesController: UIViewController {
   
   // MARK: - Private Properties
   
-  private var tableView: UITableView = UITableView()
+  private var tableView = UITableView()
   
   var features: [Features] = [
     .polygon,
@@ -133,9 +133,6 @@ extension MapFeaturesController: UITableViewDelegate {
       routeToCustomController(feature: feature)
       
     case .route:
-      routeDirectionController(feature: feature)
-      
-    default:
       routeDirectionController(feature: feature)
     }
   }
