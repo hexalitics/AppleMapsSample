@@ -40,7 +40,7 @@
 ![IMG_3337](https://user-images.githubusercontent.com/101097766/231774655-75616203-eb00-4aa9-9361-85f27a45dfb0.PNG)
 
 ## Fly Over
-![RPReplay_Final1681393870](https://user-images.githubusercontent.com/101097766/231780843-d651cb73-d58b-4399-b295-3436e97cc710.GIF)
+![RPReplay_Final1681393870](https://user-images.githubusercontent.com/101097766/231781305-0a5bcc4b-5354-4f3a-884d-50bcc6b2468c.GIF)
 
 ## Look Around
 
