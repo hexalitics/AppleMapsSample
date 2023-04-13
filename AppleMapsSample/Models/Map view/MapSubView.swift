@@ -58,8 +58,8 @@ class MapSubView {
     
     typeContainerView.backgroundColor = .clear
     
-    typeContainerView.addSubview(standardButton)
     typeContainerView.addSubview(satelliteButton)
+    typeContainerView.addSubview(standardButton)
     typeContainerView.addSubview(hybridButton)
     
     standardButton.clipsToBounds = true

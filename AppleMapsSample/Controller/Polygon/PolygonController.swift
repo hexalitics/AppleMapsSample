@@ -87,8 +87,8 @@ extension PolygonController {
   private func setView(hidden: Bool) {
     if hidden {
       UIView.animate(withDuration: 0.5) {
-        self.standardButton.frame.origin.y = 0
-        self.satelliteButton.frame.origin.y = 60
+        self.satelliteButton.frame.origin.y = 0
+        self.standardButton.frame.origin.y = 60
         self.hybridButton.frame.origin.y = 120
       }
     } else {
@@ -114,9 +114,7 @@ extension PolygonController {
     standardButton
       .tap
       .sink(receiveValue: { [weak self] _ in
-        guard
-          let self
-        else {
+        guard let self else {
           return
         }
         if #available(iOS 16.0, *) {
@@ -132,9 +130,7 @@ extension PolygonController {
     satelliteButton
       .tap
       .sink(receiveValue: { [weak self] _ in
-        guard
-          let self
-        else {
+        guard let self else {
           return
         }
         if #available(iOS 16.0, *) {
@@ -149,9 +145,7 @@ extension PolygonController {
     hybridButton
       .tap
       .sink(receiveValue: { [weak self] _ in
-        guard
-          let self
-        else {
+        guard let self else {
           return
         }
         if #available(iOS 16.0, *) {
@@ -178,9 +172,7 @@ extension PolygonController {
     mapTypeButton
       .tap
       .sink(receiveValue: { [weak self] _ in
-        guard
-          let self
-        else {
+        guard let self else {
           return
         }
         if self.standardButton.frame.origin.y == 180 {

@@ -196,8 +196,8 @@ extension RouteDirectionController {
   private func setView(hidden: Bool) {
     if hidden {
       UIView.animate(withDuration: 0.5) {
-        self.standardButton.frame.origin.y = 0
-        self.satelliteButton.frame.origin.y = 60
+        self.satelliteButton.frame.origin.y = 0
+        self.standardButton.frame.origin.y = 60
         self.hybridButton.frame.origin.y = 120
       }
     } else {
@@ -268,9 +268,7 @@ extension RouteDirectionController {
     let directions = MKDirections(request: request)
     
     directions.calculate { [unowned self] response, error in
-      guard
-        let response = response
-      else {
+      guard let response = response else {
         print("Error: \(error?.localizedDescription ?? "No error specified").")
         return
       }

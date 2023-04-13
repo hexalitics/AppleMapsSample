@@ -118,8 +118,8 @@ extension CustomAnnotationController {
   private func setView(hidden: Bool) {
     if hidden {
       UIView.animate(withDuration: 0.5) {
-        self.standardButton.frame.origin.y = 0
-        self.satelliteButton.frame.origin.y = 60
+        self.satelliteButton.frame.origin.y = 0
+        self.standardButton.frame.origin.y = 60
         self.hybridButton.frame.origin.y = 120
       }
     } else {

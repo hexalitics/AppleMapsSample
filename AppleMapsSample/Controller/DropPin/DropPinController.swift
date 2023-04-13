@@ -105,8 +105,8 @@ extension DropPinController {
   private func setView(hidden: Bool) {
     if hidden {
       UIView.animate(withDuration: 0.5) {
-        self.standardButton.frame.origin.y = 0
-        self.satelliteButton.frame.origin.y = 60
+        self.satelliteButton.frame.origin.y = 0
+        self.standardButton.frame.origin.y = 60
         self.hybridButton.frame.origin.y = 120
       }
     } else {
@@ -132,9 +132,7 @@ extension DropPinController {
     standardButton
       .tap
       .sink(receiveValue: { [weak self] _ in
-        guard
-          let self
-        else {
+        guard let self else {
           return
         }
         if #available(iOS 16.0, *) {
@@ -150,9 +148,7 @@ extension DropPinController {
     satelliteButton
       .tap
       .sink(receiveValue: { [weak self] _ in
-        guard
-          let self
-        else {
+        guard let self else {
           return
         }
         if #available(iOS 16.0, *) {
@@ -167,9 +163,7 @@ extension DropPinController {
     hybridButton
       .tap
       .sink(receiveValue: { [weak self] _ in
-        guard
-          let self
-        else {
+        guard let self else {
           return
         }
         if #available(iOS 16.0, *) {
@@ -196,9 +190,7 @@ extension DropPinController {
     mapTypeButton
       .tap
       .sink(receiveValue: { [weak self] _ in
-        guard
-          let self
-        else {
+        guard let self else {
           return
         }
         if self.standardButton.frame.origin.y == 180 {
@@ -211,9 +203,7 @@ extension DropPinController {
     
     resetButtontap
       .sink { [weak self] _ in
-        guard
-          let self
-        else {
+        guard let self else {
           return
         }
         self.resetButton.backgroundColor = .systemGray2
@@ -226,9 +216,7 @@ extension DropPinController {
     resetButton
       .tap
       .sink(receiveValue: { [weak self] _ in
-        guard
-          let self
-        else {
+        guard let self else {
           return
         }
         self.mapView.removeAnnotation(annotation)
