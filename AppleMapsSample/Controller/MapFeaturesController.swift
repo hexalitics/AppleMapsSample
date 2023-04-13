@@ -136,7 +136,7 @@ extension MapFeaturesController: UITableViewDelegate {
       routeDirectionController(feature: feature)
       
     default:
-      routeToMapController(feature: feature)
+      routeDirectionController(feature: feature)
     }
   }
 }
@@ -144,12 +144,6 @@ extension MapFeaturesController: UITableViewDelegate {
 //MARK: - Routing Method
 
 extension MapFeaturesController {
-  
-  private func routeToMapController(feature: Features) {
-    let mapController = StoryBoardScene.Main.instantiateViewController(withClass: MapViewController.self)
-    mapController.feature.value = feature
-    push(mapController)
-  }
   
   private func routeToFlyController(feature: Features) {
     let flyController: FlyOverController = FlyOverController()
