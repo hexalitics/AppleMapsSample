@@ -43,4 +43,4 @@
 ![7i4050](https://user-images.githubusercontent.com/101097766/231955467-4ffb978e-0c92-4a0e-a8bb-2568b445171f.gif)
 
 ## Look Around
-<img src="https://user-images.githubusercontent.com/101097766/231965762-b1e46a75-23b2-41d7-8037-cda677681893.gif" width="360" height="640">![7i431v]
+<img src="https://user-images.githubusercontent.com/101097766/231965762-b1e46a75-23b2-41d7-8037-cda677681893.gif" width="360" height="640">
