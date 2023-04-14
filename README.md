@@ -40,8 +40,7 @@
 ![IMG_3337](https://user-images.githubusercontent.com/101097766/231774655-75616203-eb00-4aa9-9361-85f27a45dfb0.PNG)
 
 ## Fly Over
-<!-- ![Demo GIF](https://user-images.githubusercontent.com/101097766/231781305-0a5bcc4b-5354-4f3a-884d-50bcc6b2468c.GIF) -->
-![Demo GIF](https://imgflip.com/gif/7i3zl8)
+![7i4050](https://user-images.githubusercontent.com/101097766/231955467-4ffb978e-0c92-4a0e-a8bb-2568b445171f.gif)
 
 ## Look Around
 
