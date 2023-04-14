@@ -29,7 +29,8 @@ struct MapView: UIViewRepresentable {
   @StateObject var locationManager = LocationManager()
   
   func makeUIView(context: Context) -> MKMapView {
-    mapView.showsUserLocation = true
+    mapView.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 53.339688, longitude: -6.236688), span: .init(latitudeDelta: 0.005, longitudeDelta: 0.005)), animated: true)
+    mapView.isZoomEnabled = true
     MapSubView.configureUserButton(mapView: mapView,
                                    mapTypeButton: mapTypeButton)
     
@@ -47,11 +48,8 @@ struct MapView: UIViewRepresentable {
   
   func updateUIView(_ uiView: MKMapView, context: Context) {
     if uiView.delegate != nil { return }
-    
-    if let userLocation = locationManager.userLocation {
-      uiView.setRegion(.init(center: userLocation, latitudinalMeters: 200, longitudinalMeters: 200), animated: false)
-      uiView.delegate = context.coordinator // setting the coordinator to the MkMapView
-    }
+      uiView.setRegion(.init(center: CLLocationCoordinate2D(latitude: 53.339688, longitude: -6.236688), latitudinalMeters: 200, longitudinalMeters: 200), animated: true)
+      uiView.delegate = context.coordinator
   }
   
   func makeCoordinator() -> MapViewCoordinator {

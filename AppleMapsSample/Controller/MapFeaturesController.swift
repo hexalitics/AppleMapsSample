@@ -121,7 +121,7 @@ extension MapFeaturesController: UITableViewDelegate {
       routeToFlyController(feature: feature)
       
     case .lookAround:
-      routeToLookAroundController()
+      routeToLookAroundController(feature: feature)
       
     case .pin:
       routeToDropPinController(feature: feature)
@@ -143,12 +143,12 @@ extension MapFeaturesController: UITableViewDelegate {
 extension MapFeaturesController {
   
   private func routeToFlyController(feature: Features) {
-    let flyController: FlyOverController = FlyOverController()
+    let flyController = FlyOverController()
     flyController.feature.value = feature
     push(flyController)
   }
   
-  private func routeToLookAroundController() {
+  private func routeToLookAroundController(feature: Features) {
     if #available(iOS 16.0, *) {
       let lookAroudVc = UIHostingController(rootView: LocationScreen())
       push(lookAroudVc)
@@ -159,31 +159,31 @@ extension MapFeaturesController {
   }
   
   private func routeToDropPinController(feature: Features) {
-    let dropPinController: DropPinController = DropPinController()
+    let dropPinController = DropPinController()
     dropPinController.feature.value = feature
     push(dropPinController)
   }
   
   private func routeToPolylineController(feature: Features) {
-    let polylineController: PolylineController = PolylineController()
+    let polylineController = PolylineController()
     polylineController.feature.value = feature
     push(polylineController)
   }
   
   private func routeToCustomController(feature: Features) {
-    let customController: CustomAnnotationController = CustomAnnotationController()
+    let customController = CustomAnnotationController()
     customController.feature.value = feature
     push(customController)
   }
   
   private func routeDirectionController(feature: Features) {
-    let routeDirectionController: RouteDirectionController = RouteDirectionController()
+    let routeDirectionController = RouteDirectionController()
     routeDirectionController.feature.value = feature
     push(routeDirectionController)
   }
   
   private func routePolygonController(feature: Features) {
-    let routePolygonController: PolygonController = PolygonController()
+    let routePolygonController = PolygonController()
     routePolygonController.feature.value = feature
     push(routePolygonController)
   }
