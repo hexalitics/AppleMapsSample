@@ -41,7 +41,7 @@
 
 ## Fly Over
 ![Demo GIF](https://user-images.githubusercontent.com/101097766/231781305-0a5bcc4b-5354-4f3a-884d-50bcc6b2468c.GIF)
-<a href="https://imgflip.com/gif/7i3zl8">via Imgflip</a>
+![Demo GIF](https://imgflip.com/gif/7i3zl8)
 
 ## Look Around
 
