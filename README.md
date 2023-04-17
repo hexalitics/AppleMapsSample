@@ -28,7 +28,7 @@
 
 ## Polygon
 ![IMG_3331](https://user-images.githubusercontent.com/101097766/231773613-4161e600-2267-45ca-b39f-766c149d3223.PNG)
-<!-- ![IMG_3332](https://user-images.githubusercontent.com/101097766/231773630-f72a0b3d-9f78-48f2-a560-fbbc54b59d67.PNG) -->
+![IMG_3332](https://user-images.githubusercontent.com/101097766/231773630-f72a0b3d-9f78-48f2-a560-fbbc54b59d67.PNG)
 <img src="https://user-images.githubusercontent.com/101097766/232398057-1369e59c-566e-49af-8abd-17f1e0dd469b.gif" width="350" height="623">
 
 ## Drop Pin
